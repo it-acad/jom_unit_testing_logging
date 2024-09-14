@@ -1,0 +1,16 @@
+spring:
+  profiles:
+    default: h2
+  jpa:
+    properties:
+      hibernate:
+        hbm2ddl:
+          import_files_sql_extractor: org.hibernate.tool.schema.internal.script.MultiLineSqlScriptExtractor
+server.port: 8080
+
+
+spring.jpa.show-sql: true
+spring.jpa.generate-ddl: true
+spring.jpa.hibernate.ddl-auto: validate
+
+
